@@ -42,6 +42,39 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Third Party Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      .tryBtn:hover i {
+        margin-left: 24px;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #1f1f1f !important;
+      }
+      .accordion-item:first-of-type .accordion-button {
+        border-radius: 3px !important;
+      }
+      .accordion-button:not(.collapsed) {
+        color: #fff !important;
+      }
+      .accordion-button:not(.collapsed) {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+      .accordion-button:not(.collapsed):after {
+        background-image: url('./Assets/minus-sign.png') !important;
+      }
+      .accordion-button:after {
+        background-image: url('./Assets/plus.png') !important;
+      }
+      .mySec marquee {
+        transform: rotate(-3deg);
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -68,14 +101,10 @@
         },
       };
     </script>
-    <style>
-      .tryBtn:hover i {
-        margin-left: 24px;
-      }
-    </style>
   </head>
   <body>
-    <div class="bg-mainBgColor">
+    <div class="bg-[#111111]">
+      <!-- Header Section -->
       <header class="">
         <nav class="flex justify-between w-[90%] mx-auto items-center py-4">
           <div>
@@ -134,7 +163,28 @@
           <i class="fas fa-chevron-right ml-4 text-4xl duration-200"></i>
         </h3>
       </div>
+      <!-- Time pass -->
 
+      <div class="pt-8 pb-24 mySec">
+        <marquee behavior="alternate" direction="ltr">
+          <div class="flex space-x-8">
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" />
+            <img src="./Assets/logo.svg" alt="img" /></div
+        ></marquee>
+      </div>
+      <!-- Video Section -->
       <div class="w-[90%] mx-auto">
         <video
           muted
@@ -146,12 +196,12 @@
           <source src="./Assets//video-1.mp4" />
         </video>
       </div>
-
+      <!-- Image Marquee -->
       <marquee
         behavior="alternate"
         direction="ltr"
         scrollamount="10"
-        class="mt-16 bg-[rgba(0,0,0,1)]"
+        class="mt-16 bg-white"
       >
         <div class="flex py-16">
           <img src="./Assets/c-1.png" alt="img" class="px-4" />
@@ -160,13 +210,244 @@
           <img src="./Assets/c-4.png" alt="img" class="px-4" />
           <img src="./Assets/c-5.png" alt="img" class="px-4" />
           <img src="./Assets/c-6.png" alt="img" class="px-4" />
-          <img src="./Assets/c-7.png" alt="img" class="px-4" />
+
           <img src="./Assets/c-8.png" alt="img" class="px-4" />
           <img src="./Assets/c-9.png" alt="img" class="px-4" />
           <img src="./Assets/c-10.png" alt="img" class="px-4" />
         </div>
       </marquee>
+      <!-- FAQ Section -->
+      <div class="w-[90%] mx-auto mt-16 pb-16">
+        <h2 class="my-8 text-3xl font-semibold text-white">FAQ's</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item bg-[#181818] mt-4">
+            <h2 class="accordion-header mb-0" id="headingOne">
+              <button
+                class="accordion-button relative flex items-center w-full py-4 px-5 text-lg text-white text-left bg-[#181818] border-0 rounded-none transition focus:outline-none font-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                How to upload PDF and other documents
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse border-0 collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body py-4 px-5">
+                <p class="text-white">
+                  Uploading any type of document on the Pensil communities is
+                  super simple:
+                </p>
+                <br />
+                <p class="text-white">Click on <strong>Attachment</strong></p>
+                <p class="text-white">Select the File you want to upload</p>
+                <p class="text-white">
+                  Click on <strong>Post</strong> button at the top
+                </p>
+                <p class="text-white">Viola!</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-[#181818] mt-4">
+            <h2 class="accordion-header mb-0" id="headingTwo">
+              <button
+                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-lg text-white text-left bg-[#181818] border-0 rounded-none transition focus:outline-none font-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How to create a Chat Section
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse border-0 collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body py-4 px-5">
+                <p class="text-white">
+                  A <strong>Chat section</strong> is designed to enable
+                  real-time conversations between the community members.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-[#181818] mt-4">
+            <h2 class="accordion-header mb-0" id="headingThree">
+              <button
+                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-lg text-white text-left bg-[#181818] border-0 rounded-none transition focus:outline-none font-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                How to create a Post Section
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse border-0 collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body py-4 px-5">
+                <p class="text-white">
+                  A <strong>Posts type </strong> section is where you can put
+                  individual posts and other users can comment or upvote.
+                </p>
+                <br />
+                <p class="text-white">
+                  This type of section is most beneficial for:
+                </p>
+                <br />
+                <p class="text-white">
+                  Organizing important conversation topics
+                </p>
+                <p class="text-white">
+                  Publishing content you want users to notice 5
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-[#181818] mt-4">
+            <h2 class="accordion-header mb-0" id="headingFour">
+              <button
+                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-lg text-white text-left bg-[#181818] border-0 rounded-none transition focus:outline-none font-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                How to create a New Group
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse border-0 collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body py-4 px-5">
+                <p class="text-white">
+                  A Group is a space where you can add multiple sections,
+                  depending on what you want to use these sections for.
+                </p>
+                <br />
+                <p class="text-white">Groups can be:</p>
+                <br />
+                <p class="text-white">
+                  <strong>Open and Free For Everyone</strong> - Anyone with your
+                  community URL will be able to see the sections and content
+                  inside them.
+                </p>
+                <p class="text-white">
+                  <strong>Closed and Free For Everyone</strong> - Users will be
+                  able to Request Access to this group. This Request needs to be
+                  approved by the Community Admin.
+                </p>
+                <p class="text-white">
+                  <strong>Paid Group</strong> - Community Admin can decide a
+                  price tag for access to the group. Users have to first make
+                  payments to access such groups.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-[#181818] mt-4">
+            <h2 class="accordion-header mb-0" id="headingFive">
+              <button
+                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-lg text-white text-left bg-[#181818] border-0 rounded-none transition focus:outline-none font-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                What is Pencil?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse border-0 collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body py-4 px-5">
+                <p class="text-white">
+                  Pensil is a community-based learning and engaging platform.
+                  With Pensil, people can come together for shared interests,
+                  values, beliefs, or causes. Pensil keeps conversations
+                  organized by Groups You can host the discussion, files, and
+                  anything you want to share with your audience.
+                </p>
+                <p class="text-white">
+                  With Pensil you can Bring together your discussions,
+                  memberships, and content.Integrate a thriving community
+                  wherever your audience is, all under your own brand.
+                </p>
+                <p class="text-white">
+                  Invite your audience to your community and engage with them.
+                  Your audience can join your groups, or become members of your
+                  community.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-[#181818] mt-4">
+            <h2 class="accordion-header mb-0" id="headingSix">
+              <button
+                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-lg text-white text-left bg-[#181818] border-0 rounded-none transition focus:outline-none font-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                What is Community?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse border-0 collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body py-4 px-5">
+                <p class="text-white">
+                  The English-language word "community" derives from the Old
+                  French comuneté, which essentially means "public spirit"
+                </p>
+                <br />
+                <p class="text-white">
+                  A <strong>community</strong> is a social unit (a group of
+                  living things) with commonalities such as norms, religion,
+                  values, customs, or identity. Communities may share a sense of
+                  place situated in a given geographical area (e.g. a country,
+                  village, town, or neighborhood) or in virtual space through
+                  communication platforms.
+                </p>
+                <p class="text-white">
+                  People can come together for shared interests, values,
+                  beliefs, or causes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
       crossorigin="anonymous"
