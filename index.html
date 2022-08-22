@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Pencil || Rohit Madeshiya</title>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/cc70fa30b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Crisp CDN -->
+    <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = 'b894a05a-6270-4925-b49a-e5a238d9a407';
+      (function () {
+        d = document;
+        s = d.createElement('script');
+        s.src = 'https://client.crisp.chat/l.js';
+        s.async = 1;
+        d.getElementsByTagName('head')[0].appendChild(s);
+      })();
+    </script>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- AOS ANIMATION CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Font  CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: '480px',
+
+            cs: '600px',
+
+            md: '768px',
+
+            lg: '1024px',
+
+            xl: '1280px',
+
+            '2xl': '1536px',
+          },
+          extend: {
+            colors: {
+              mainBgColor: '#1f1f1f',
+              myWhiteColor: '#ffffff',
+              blue: '#2b95ff',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .tryBtn:hover i {
+        margin-left: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-mainBgColor">
+      <header class="">
+        <nav class="flex justify-between w-[90%] mx-auto items-center py-4">
+          <div>
+            <img src="./Assets/logo.svg" alt="logo" />
+          </div>
+          <ul class="flex items-center space-x-8">
+            <li
+              class="text-white text-xl duration-200 hover:text-blue cursor-pointer"
+            >
+              Use Case
+            </li>
+            <li
+              class="text-white text-xl duration-200 hover:text-blue cursor-pointer"
+            >
+              Resources
+            </li>
+            <li
+              class="text-white text-xl duration-200 hover:text-blue cursor-pointer"
+            >
+              Pricing
+            </li>
+            <button
+              class="text-xl text-[#2b95ff] border-2 border-blue py-1 px-4 rounded-md duration-200 hover:text-white hover:bg-blue"
+            >
+              Log In
+            </button>
+            <button
+              class="text-white text-xl bg-blue border-2 border-blue py-1 px-4 rounded-md duration-300 hover:bg-transparent hover:text-blue"
+            >
+              Sign Up
+            </button>
+          </ul>
+          <div class="hidden">
+            <i class="fas fa-bars text-2xl text-blue" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        class="py-16 w-[60%] mx-auto"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
+        <h2
+          class="text-white text-7xl font-semibold text-center my-8 leading-tight"
+          style="font-family: Francois One"
+          sty
+        >
+          One platform for all your community needs
+        </h2>
+        <h3
+          class="text-center py-8 text-blue cursor-pointer flex justify-center items-center flex-row tryBtn"
+          style="font-family: Francois One, sans-serif"
+        >
+          <p class="text-6xl">Try for FREE</p>
+          <i class="fas fa-chevron-right ml-4 text-4xl duration-200"></i>
+        </h3>
+      </div>
+
+      <div class="w-[90%] mx-auto">
+        <video
+          muted
+          autoplay
+          loop
+          preload="metadata"
+          class="w-full rounded-3xl"
+        >
+          <source src="./Assets//video-1.mp4" />
+        </video>
+      </div>
+
+      <marquee
+        behavior="alternate"
+        direction="ltr"
+        scrollamount="10"
+        class="mt-16 bg-[rgba(0,0,0,1)]"
+      >
+        <div class="flex py-16">
+          <img src="./Assets/c-1.png" alt="img" class="px-4" />
+          <img src="./Assets/c-2.png" alt="img" class="px-4" />
+          <img src="./Assets/c-3.png" alt="img" class="px-4" />
+          <img src="./Assets/c-4.png" alt="img" class="px-4" />
+          <img src="./Assets/c-5.png" alt="img" class="px-4" />
+          <img src="./Assets/c-6.png" alt="img" class="px-4" />
+          <img src="./Assets/c-7.png" alt="img" class="px-4" />
+          <img src="./Assets/c-8.png" alt="img" class="px-4" />
+          <img src="./Assets/c-9.png" alt="img" class="px-4" />
+          <img src="./Assets/c-10.png" alt="img" class="px-4" />
+        </div>
+      </marquee>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
